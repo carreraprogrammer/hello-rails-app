@@ -29,7 +29,7 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: hello_rails_react
+  #username: idea_chronicler
 
   # The password associated with the postgres role (username).
   #password:
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: hello_rails_react_production
-  username: hello_rails_react
-  password: <%= ENV["HELLO_RAILS_REACT_DATABASE_PASSWORD"] %>
+  database: hello_rails_app_production
+  username: hello_rails_app
+  password: <%= ENV["RECIPE_APP_PASSWORD"] %>

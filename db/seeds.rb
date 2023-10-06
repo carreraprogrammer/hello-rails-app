@@ -1,5 +1,5 @@
-Message.create(greeting: 'Hello, world!')
-Message.create(greeting: 'Hey, Heya or Hey there!')
-Message.create(greeting: 'Its good to see you')
-Message.create(greeting: 'Howdy!')
-Message.create(greeting: 'Hi, there!')
+greetings = ["Hi, you're most welcome!", "How do you do? Step right in.", "Greetings!", "Hello there", "Salutations! Do make yourself at home."]
+
+greetings.each do |greeting|
+  Message.create(text: greeting)
+end
